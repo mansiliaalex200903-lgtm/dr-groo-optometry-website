@@ -1,0 +1,10 @@
+{
+  "name": "dr-groo-optometry-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes serve live -l tcp://localhost:3001",
+    "dev:redesign": "npx --yes serve _redesign-draft -l tcp://localhost:3002",
+    "mirror": "node scripts/mirror-site.mjs"
+  }
+}

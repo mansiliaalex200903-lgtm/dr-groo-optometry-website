@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 302" fill="none" aria-hidden="true">
+  <!-- Group_14  vertical deco: axis, arch, fan base, ticks, solid dot -->
+  <!-- central axis -->
+  <line x1="24" y1="0" x2="24" y2="302" stroke="currentColor" stroke-width="1.15"/>
+
+  <!-- upper tick -->
+  <line x1="18" y1="28" x2="30" y2="28" stroke="currentColor" stroke-width="1.15"/>
+
+  <!-- elongated arch / pill (rounded top, straight sides) -->
+  <path d="M12 70 V168 M36 70 V168 M12 70 A12 12 0 0 1 36 70" stroke="currentColor" stroke-width="1.15"/>
+
+  <!-- side ticks on arch -->
+  <line x1="6" y1="108" x2="12" y2="108" stroke="currentColor" stroke-width="1.15"/>
+  <line x1="36" y1="108" x2="42" y2="108" stroke="currentColor" stroke-width="1.15"/>
+
+  <!-- fan / scalloped base  three nested upward curves meeting on axis -->
+  <path d="M12 168 Q24 198 36 168" stroke="currentColor" stroke-width="1.15"/>
+  <path d="M14.5 168 Q24 190 33.5 168" stroke="currentColor" stroke-width="1.1"/>
+  <path d="M17 168 Q24 182 31 168" stroke="currentColor" stroke-width="1.05"/>
+
+  <!-- lower tick above dot -->
+  <line x1="18" y1="204" x2="30" y2="204" stroke="currentColor" stroke-width="1.15"/>
+
+  <!-- solid dot -->
+  <circle cx="24" cy="218" r="3.5" fill="currentColor"/>
+
+  <!-- tick below dot -->
+  <line x1="18" y1="230" x2="30" y2="230" stroke="currentColor" stroke-width="1.15"/>
+</svg>
