@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 640" fill="none" aria-hidden="true">
+  <!-- sampled from Desktop 3: cream #EAE4D7 · terra #8C4B28 · olive #614F30 · tan #C1AB91 -->
+  <path d="M52 620 V268 A78 78 0 0 1 208 268 V620" stroke="#8C4B28" stroke-width="1.25" opacity=".5"/>
+
+  <path d="M98 620 V318 A48 48 0 0 1 194 318 V620 Z" fill="#55553E"/>
+  <path d="M155 620 V118 A70 70 0 0 1 295 118 V620 Z" fill="#8C4B28"/>
+  <path d="M248 620 V145 A72 72 0 0 1 392 145 V620 Z" fill="#614F30"/>
+  <path d="M330 620 V88 A58 58 0 0 1 446 88 V620 Z" fill="#3D4233"/>
+  <path d="M360 620 V248 A115 115 0 0 1 590 248 V620 Z" fill="#C1AB91"/>
+
+  <path d="M155 620 V118 A70 70 0 0 1 295 118 V620" stroke="#EAE4D7" stroke-width="1.5" opacity=".75"/>
+  <path d="M248 620 V145 A72 72 0 0 1 392 145 V620" stroke="#EAE4D7" stroke-width="1.2" opacity=".4"/>
+  <path d="M98 620 V318 A48 48 0 0 1 194 318 V620" stroke="#EAE4D7" stroke-width="1.1" opacity=".35"/>
+
+  <path d="M248 620 V318 A48 48 0 0 1 295 318 V620 Z" fill="#2A2E22" fill-opacity=".2"/>
+  <path d="M360 620 V248 A58 58 0 0 1 446 248 V620 Z" fill="#6B4428" fill-opacity=".16"/>
+  <path d="M140 112 A95 95 0 0 1 340 145" stroke="#8C4B28" stroke-width="1" opacity=".32"/>
+</svg>

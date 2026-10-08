@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" aria-hidden="true">
+  <!-- Group_16 eye sunburst -->
+  <g stroke="#C5A16D" stroke-width="1.15" stroke-linecap="round">
+    <!-- 20 rays -->
+    <line x1="80" y1="80" x2="80" y2="8"/>
+    <line x1="80" y1="80" x2="102.2" y2="12.1"/>
+    <line x1="80" y1="80" x2="121.3" y2="23.9"/>
+    <line x1="80" y1="80" x2="136.1" y2="42.7"/>
+    <line x1="80" y1="80" x2="147.9" y2="66.1"/>
+    <line x1="80" y1="80" x2="152" y2="80"/>
+    <line x1="80" y1="80" x2="147.9" y2="93.9"/>
+    <line x1="80" y1="80" x2="136.1" y2="117.3"/>
+    <line x1="80" y1="80" x2="121.3" y2="136.1"/>
+    <line x1="80" y1="80" x2="102.2" y2="147.9"/>
+    <line x1="80" y1="80" x2="80" y2="152"/>
+    <line x1="80" y1="80" x2="57.8" y2="147.9"/>
+    <line x1="80" y1="80" x2="38.7" y2="136.1"/>
+    <line x1="80" y1="80" x2="23.9" y2="117.3"/>
+    <line x1="80" y1="80" x2="12.1" y2="93.9"/>
+    <line x1="80" y1="80" x2="8" y2="80"/>
+    <line x1="80" y1="80" x2="12.1" y2="66.1"/>
+    <line x1="80" y1="80" x2="23.9" y2="42.7"/>
+    <line x1="80" y1="80" x2="38.7" y2="23.9"/>
+    <line x1="80" y1="80" x2="57.8" y2="12.1"/>
+  </g>
+  <!-- dark green oval -->
+  <ellipse cx="80" cy="80" rx="42" ry="26" fill="#3D4532"/>
+  <!-- almond eye outline -->
+  <path d="M38 80 C52 58 68 50 80 50 C92 50 108 58 122 80 C108 102 92 110 80 110 C68 110 52 102 38 80 Z" stroke="#C5A16D" stroke-width="1.35" fill="none"/>
+  <!-- iris + pupil -->
+  <circle cx="80" cy="82" r="11" fill="#C5A16D"/>
+  <circle cx="80" cy="80" r="6.5" fill="#4A5340"/>
+</svg>
