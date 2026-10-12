@@ -169,11 +169,12 @@ button { font: inherit; color: inherit; }
 }
 .nav-primary a {
   font-family: "Jost", var(--sans);
-  font-size: 16px;
+  font-size: clamp(12px, 1.05vw, 15px);
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.02em;
   line-height: normal;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav-end {
@@ -183,16 +184,17 @@ button { font: inherit; color: inherit; }
 }
 .site-header .btn-outline {
   font-family: "Jost", var(--sans);
-  font-size: 16px;
+  font-size: clamp(12px, 1.05vw, 15px);
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.02em;
   line-height: normal;
+  white-space: nowrap;
 }
 .nav-phone {
   font-family: "Jost", var(--sans);
-  font-size: 16px;
+  font-size: clamp(12px, 1.05vw, 15px);
   font-weight: 400;
-  letter-spacing: 0;
+  letter-spacing: 0.02em;
   line-height: normal;
   white-space: nowrap;
 }
@@ -208,6 +210,45 @@ button { font: inherit; color: inherit; }
   cursor: pointer;
 }
 .nav-burger i { display: block; height: 1.25px; background: var(--ink); }
+@media (min-width: 901px) {
+  .nav-burger { display: none; }
+}
+@media (max-width: 1240px) {
+  .nav-phone { display: none; }
+}
+
+.nav-drop { position: relative; }
+.nav-drop > a { display: inline-flex; align-items: center; gap: 0.3rem; }
+.nav-drop > a::after {
+  content: "";
+  width: 0.35rem;
+  height: 0.35rem;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: translateY(-1px) rotate(45deg);
+}
+.nav-drop-panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.7rem);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 11.5rem;
+  padding: 0.45rem 0;
+  background: var(--cream);
+  border: 1px solid rgba(26, 24, 23, 0.12);
+  box-shadow: 0 12px 28px rgba(26, 24, 23, 0.08);
+  z-index: 30;
+}
+.nav-drop:hover .nav-drop-panel,
+.nav-drop:focus-within .nav-drop-panel { display: grid; }
+.nav-drop-panel a {
+  padding: 0.55rem 1rem;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.nav-drop-panel a:hover { opacity: 1; background: rgba(61, 66, 51, 0.06); }
 
 /* ——— HERO (Desktop-3 ~42% copy | ~58% art) ——— */
 .hero {
@@ -1022,10 +1063,7 @@ button { font: inherit; color: inherit; }
 @media (max-width: 1100px) {
   .precision { grid-template-columns: 1fr 1fr; }
   .precision-list { grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); border-left: 0; padding-left: 0; padding-top: 1rem; }
-  .nav-primary { gap: clamp(0.65rem, 1.4vw, 1.1rem); }
-  .nav-primary a,
-  .site-header .btn-outline,
-  .nav-phone { font-size: 14px; }
+  .nav-primary { gap: 0.75rem; }
 }
 
 @media (max-width: 900px) {
@@ -1112,4 +1150,293 @@ button { font: inherit; color: inherit; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
+}
+
+/* ——— INNER PAGES ——— */
+.page-hero {
+  padding: clamp(2.75rem, 6vw, 4.75rem) var(--pad) clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--cream);
+}
+.page-kicker {
+  margin: 0 0 0.85rem;
+  font-family: "Jost", var(--sans);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.page-hero h1 {
+  max-width: 16ch;
+  font-family: "Nyght Serif", var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.page-hero .lede {
+  max-width: 38rem;
+  margin-top: 1.1rem;
+  font-family: "Jost", var(--sans);
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.page-section {
+  padding: clamp(2.25rem, 5vw, 4rem) var(--pad);
+  background: var(--cream-2);
+}
+.page-section.alt { background: #f7f3ea; }
+.page-section.forest {
+  background: var(--forest);
+  color: #fff;
+}
+.section-label {
+  margin: 0 0 0.7rem;
+  font-family: "Jost", var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.page-section h2,
+.prose h2 {
+  font-family: "Nyght Serif", var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.page-section.forest h2 { color: #fff; }
+
+.doctor-grid,
+.split-2,
+.card-grid,
+.team-grid,
+.form-grid,
+.brand-grid {
+  display: grid;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+.doctor-grid { grid-template-columns: 1fr 1fr; margin-top: 2rem; }
+.split-2 { grid-template-columns: 1.15fr 0.85fr; align-items: start; }
+.card-grid,
+.team-grid { grid-template-columns: repeat(3, 1fr); }
+.form-grid { grid-template-columns: repeat(2, 1fr); }
+.brand-grid { grid-template-columns: repeat(4, 1fr); }
+
+.doctor-card,
+.info-card,
+.team-card,
+.form-card,
+.svc-detail {
+  background: #fff;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+}
+.doctor-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 18%;
+  margin-bottom: 1.15rem;
+  background: #efe8dc;
+}
+.doctor-card h2,
+.svc-detail h3,
+.team-card h3,
+.form-card h3,
+.info-card h3 {
+  font-family: "Nyght Serif", var(--serif);
+  font-weight: 400;
+  font-size: 1.55rem;
+  line-height: 1.15;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+.doctor-card p,
+.svc-detail p,
+.team-card p,
+.info-card p,
+.prose p,
+.form-card p {
+  font-family: "Jost", var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #3f3a34;
+  margin: 0 0 0.75rem;
+}
+.role {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: "Jost", var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.hours {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Jost", var(--sans);
+}
+.hours th,
+.hours td {
+  text-align: left;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(26, 24, 23, 0.12);
+  font-weight: 400;
+  vertical-align: top;
+}
+.hours th {
+  width: 8.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.hours td { color: #3f3a34; font-size: 0.95rem; }
+
+.map-frame {
+  width: 100%;
+  min-height: 280px;
+  border: 0;
+  background: #efe8dc;
+}
+.dir-list {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+.dir-list li {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(26, 24, 23, 0.12);
+  font-family: "Jost", var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #3f3a34;
+}
+.dir-list strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "Jost", var(--sans);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--ink);
+}
+
+.check-list {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+.check-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  font-family: "Jost", var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #3f3a34;
+}
+.check-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  transform: rotate(45deg);
+}
+
+.brand-grid span {
+  display: block;
+  padding: 0.9rem 0.4rem;
+  border-bottom: 1px solid rgba(26, 24, 23, 0.1);
+  font-family: "Jost", var(--sans);
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: var(--ink);
+}
+
+.prose { max-width: 46rem; }
+.prose h2 { margin: 1.75rem 0 0.6rem; font-size: 1.45rem; }
+.prose h3 {
+  margin: 1.25rem 0 0.4rem;
+  font-family: "Jost", var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.note {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-left: 2px solid var(--gold);
+  font-family: "Jost", var(--sans);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #4a4540;
+}
+
+.more-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.more-list a {
+  display: block;
+  padding: 1.4rem 1.3rem;
+  background: #fff;
+  border: 1px solid rgba(197, 160, 89, 0.35);
+}
+.more-list a:hover { opacity: 1; border-color: var(--forest); }
+.more-list strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: "Nyght Serif", var(--serif);
+  font-weight: 400;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+}
+.more-list span {
+  font-family: "Jost", var(--sans);
+  font-size: 0.9rem;
+  color: #4a4540;
+}
+
+@media (max-width: 900px) {
+  .nav-drop-panel {
+    position: static;
+    transform: none;
+    display: grid;
+    min-width: 0;
+    box-shadow: none;
+    border: 0;
+    padding: 0;
+    background: transparent;
+  }
+  .nav-drop-panel a {
+    padding: 0.7rem var(--pad);
+    border-top: 1px solid rgba(26, 26, 26, 0.08);
+  }
+  .doctor-grid,
+  .split-2,
+  .card-grid,
+  .team-grid,
+  .form-grid,
+  .more-list { grid-template-columns: 1fr; }
+  .brand-grid { grid-template-columns: 1fr 1fr; }
 }

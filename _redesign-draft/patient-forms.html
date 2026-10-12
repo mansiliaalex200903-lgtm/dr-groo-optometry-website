@@ -4,42 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Patient Forms | Hudson Valley Eye Doctor</title>
+  <meta name="description" content="Download patient forms before your visit to Hudson Valley Eye Doctor in Newburgh.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Jost:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=NTR&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="index.html">
-        Hudson Valley Eye Doctor
-        <span>Dr. Elaina M. Groo &amp; Dr. John Kaknis</span>
-      </a>
-      <a class="header-cta" href="tel:8455652020">845-565-2020</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Main">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="our-practice.html">Our Practice</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+    <a class="brand" href="index.html" aria-label="Hudson Valley Eye Doctor home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+    </a>
+    <nav class="nav-primary" aria-label="Primary">
+      <a href="index.html">Homepage</a>
+      <a href="our-practice.html">Our Practice</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="services.html">Services &amp; New</a>
+      <div class="nav-drop">
+        <a href="more.html" aria-current="page">More</a>
+        <div class="nav-drop-panel">
+          <a href="patient-forms.html" aria-current="page">Patient Forms</a>
+          <a href="optical.html">Optical</a>
+          <a href="privacy-notice.html">Privacy</a>
+          <a href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Order Contacts</a>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-end">
+      <a class="btn-outline" href="contact.html">Book an Exam</a>
+      <a class="nav-phone" href="tel:8455652020">(845) 565-2020</a>
+      <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
     </div>
   </header>
 
-  <main class="page" id="main">
-    <h1>Patient forms</h1>
-    <p class="lead">Placeholder for your redesign. Until new forms are hosted here, patients can use the live site.</p>
-    <p><a class="btn btn-primary" href="https://www.drelainamgroo.com/patient-forms.html" target="_blank" rel="noopener noreferrer">Open forms on current website</a></p>
-  </main>
+  <section class="page-hero">
+    <p class="page-kicker">Before You Arrive</p>
+    <h1>Patient Forms</h1>
+    <p class="lede">Download and print your forms before the visit. Appointment reminders may arrive by text, email, or phone — please confirm and update your contact information.</p>
+  </section>
+
+  <section class="page-section">
+    <div class="form-grid">
+      <article class="form-card">
+        <span class="role">All patients</span>
+        <h3>Patient Forms</h3>
+        <p>Medical history, medications, and visit paperwork.</p>
+        <a class="btn-fill" href="forms/patient-forms.docx" download>Download <span>↓</span></a>
+      </article>
+      <article class="form-card">
+        <span class="role">Ages 17 and under</span>
+        <h3>Child Screening</h3>
+        <p>Required children’s questionnaire. Complete it before the appointment.</p>
+        <a class="btn-outline" href="forms/child-screening-questionnaire.docx" download>Download</a>
+      </article>
+      <article class="form-card">
+        <span class="role">Contact lens wearers</span>
+        <h3>Contact Lens Form</h3>
+        <p>Bring this with your current boxes or labels for both eyes.</p>
+        <a class="btn-outline" href="forms/contact-lens-form.docx" download>Download</a>
+      </article>
+      <article class="form-card">
+        <span class="role">When offered</span>
+        <h3>Telehealth Consent</h3>
+        <p>Consent form for a telehealth visit when the office offers one.</p>
+        <a class="btn-outline" href="forms/telehealth-consent.docx" download>Download</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="page-section alt">
+    <div class="split-2">
+      <div>
+        <p class="section-label">What to Bring</p>
+        <h2>Your Appointment</h2>
+        <ul class="check-list">
+          <li>Completed patient forms, including medical conditions, medications, and dosages.</li>
+          <li>For children 17 and under, the children’s questionnaire.</li>
+          <li>Doctor referrals, records, or lab work if you have them.</li>
+          <li>Photo identification.</li>
+          <li>Medical and vision insurance cards.</li>
+          <li>Eyeglasses, sunglasses, and computer glasses.</li>
+          <li>Contact lens boxes or labels, if you wear disposables.</li>
+        </ul>
+      </div>
+      <article class="info-card">
+        <p class="section-label">Children 6–10</p>
+        <h3>Please Prepare Ahead</h3>
+        <p>Previous eye exam records should be sent to the office before the visit. Complete the child history form, or ask us to mail a copy. If your child does not yet know their letters, review the children’s eye chart we provide so the exam can go smoothly.</p>
+        <p>If these steps are not done before the appointment, we may need to reschedule or refer you to another provider.</p>
+        <p>Copays for exams, glasses, contacts, and materials are due at the visit. Non-plan orders require a deposit. Children under 18 must be accompanied by a parent unless the office has the paperwork for a teen to be seen alone.</p>
+      </article>
+    </div>
+  </section>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <p class="small-print"><a href="index.html">Back to home</a></p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <strong>Hudson Valley Eye Doctor</strong>
+        <p>Drs. Groo &amp; Kaknis Optometry</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="services.html">Eye Care</a>
+        <a href="optical.html">Eyewear</a>
+        <a href="our-practice.html">About</a>
+        <a href="patient-forms.html">Resources</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/hudsonvalleyeyedoctor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+        <a href="https://www.facebook.com/HudsonValleyEyeDoc" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Hudson Valley Eye Doctor · Newburgh, NY</p>
+      <p><a href="privacy-notice.html">Privacy Policy</a> · <a href="contact.html">Contact</a></p>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>
