@@ -5,350 +5,510 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hudson Valley Eye Doctor | Drs. Groo &amp; Kaknis</title>
   <meta name="description" content="Modern eye care. Elaina M. Groo &amp; John Kaknis Optometry — Hudson Valley Eye Doctor, Newburgh, NY.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Cinzel:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=NTR&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- ========== TOP: live text + vector SVG (sharp, no raster) ========== -->
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Hudson Valley Eye Doctor home">
-      <span class="brand-mark" aria-hidden="true">H</span>
-    </a>
-    <nav class="nav-primary" aria-label="Primary">
-      <a href="index.html" aria-current="page">Homepage</a>
-      <a href="our-practice.html">Our Practice</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="services.html">Services &amp; New</a>
-      <div class="nav-drop">
-        <a href="more.html">More</a>
-        <div class="nav-drop-panel">
-          <a href="patient-forms.html">Patient Forms</a>
-          <a href="optical.html">Optical</a>
-          <a href="privacy-notice.html">Privacy</a>
-          <a href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Order Contacts</a>
+  <header class="site-nav">
+    <div class="site-nav-inner">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+        <span></span><span></span>
+      </button>
+      <nav class="site-menu" id="site-menu" aria-label="Primary">
+        <a href="#approach">Our Approach</a>
+        <div class="nav-item has-drop">
+          <button type="button" aria-expanded="false" aria-haspopup="true">Services <span class="caret" aria-hidden="true"></span></button>
+          <div class="nav-drop">
+            <a href="#services">Eye exams</a>
+            <a href="#services">Dry eye care</a>
+            <a href="#services">Ocular disease care</a>
+            <a href="#services">Contact lenses</a>
+            <a href="#scanner">Biophotonic scan</a>
+          </div>
         </div>
+        <a href="#new-patients">New Patients</a>
+        <a href="#doctors">Meet the Team</a>
+        <div class="nav-item has-drop">
+          <button type="button" aria-expanded="false" aria-haspopup="true">Resources <span class="caret" aria-hidden="true"></span></button>
+          <div class="nav-drop">
+            <a href="#reviews">Reviews</a>
+            <a href="#scanner">Your scan</a>
+            <a href="#faq">FAQ</a>
+            <a href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Order contacts</a>
+          </div>
+        </div>
+      </nav>
+      <div class="site-nav-end">
+        <a class="nav-login" href="#contact">Patient Login</a>
+        <a class="nav-book" href="#contact">Book a Consultation</a>
       </div>
-    </nav>
-    <div class="nav-end">
-      <a class="btn-outline" href="contact.html">Book an Exam</a>
-      <a class="nav-phone" href="tel:8455652020">(845) 565-2020</a>
-      <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false"><i></i><i></i><i></i></button>
     </div>
   </header>
 
-  <section class="hero" aria-label="Hudson Valley Eye Doctor">
-    <div class="hero-copy">
-      <p class="eyebrow">
-        <span class="eyebrow-line">Modern Eye Care.</span>
-        <span class="eyebrow-line">Elaina M. Groo &amp; John Kaknis Optometry</span>
+  <main class="page">
+
+    <div class="hero-reel">
+      <section class="hero" aria-label="Hudson Valley Eye Doctor">
+        <div class="hero-content">
+          <h1>Hudson Valley<br>Eye Doctor</h1>
+          <p class="hero-sub">
+            <span>Modern Eye Care.</span>
+            <span>Elaina M. Groo &amp; John Kaknis</span>
+            <span>Optometry</span>
+          </p>
+        </div>
+        <div class="hero-bottom">
+          <p class="hero-lede">Comprehensive eye care, curated eyewear,<br>and a personalized expirience - all in one place.</p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#contact">Book an Exam <span aria-hidden="true">→</span></a>
+            <a class="btn btn-soft" href="#services">Explore Eyewear</a>
+          </div>
+        </div>
+        <a class="hero-scroll" href="#home-reel" aria-label="Scroll to film">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path fill="currentColor" d="m5.796 9.246-2.97-2.97-.762.782 4.356 4.356 4.356-4.356-.782-.782-2.96 2.96V1.039H5.806z"/></svg>
+        </a>
+      </section>
+    </div>
+
+    <section class="film" id="home-reel" aria-label="Practice film">
+      <div class="film-sticky">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/video/1120.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <div class="page-cover">
+    <section class="intro inner" id="approach" aria-label="About the practice">
+      <p class="intro-lead">
+        <span>We help Hudson Valley neighbours see</span>
+        <span>clearly and stay healthy by combining thorough eye</span>
+        <span>exams, advanced scans, and expert eyewear</span>
+        <span>fitting, all under one roof.</span>
       </p>
-      <h1>
-        <span class="h1-line">Hudson Valley</span>
-        <span class="h1-line">Eye Doctor</span>
-      </h1>
-      <p class="lede">Comprehensive eye care, curated eyewear,<br>and a personalized experience — all in one place.</p>
-      <div class="hero-actions">
-        <a class="btn-fill" href="contact.html">Book an Exam <span aria-hidden="true">→</span></a>
-        <a class="link-underline" href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Explore Eyewear</a>
-      </div>
-    </div>
-
-    <div class="hero-art" aria-hidden="true">
-      <img class="arch-stack" src="assets/hero-arches.png" alt="" width="481" height="544" draggable="false">
-      <div class="hero-rail">
-        <span class="rail-line"></span>
-        <span class="rail-diamond"></span>
-      </div>
-      <div class="hero-pager">
-        <span class="num">01/04</span>
-        <span class="progress" aria-hidden="true"><i></i></span>
-        <button class="pager-next" type="button" aria-label="Next slide">›</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== SERVICES (Group_11) — live text + vector icons ========== -->
-  <section class="services" id="services">
-    <div class="services-inner">
-      <header class="services-head">
-        <p class="services-eyebrow"><span></span>Our Services<span></span></p>
-        <h2>Personalized Eye Care</h2>
-        <div class="services-divider" aria-hidden="true">
-          <i></i><i class="mid"></i><i></i>
+      <div class="intro-grid">
+        <p class="intro-kicker">Who you trust with your eyes matters.</p>
+        <div class="intro-copy">
+          <p>Clear, comfortable vision and healthy eyes are essential to your well-being. We’re an independent, full-service practice committed to protecting your eye health with the most advanced technology available.</p>
+          <p>Two doctors, two licensed opticians and a dedicated team, all focused on the highest standard of vision care.</p>
+          <a class="intro-link" href="#doctors">Meet our team</a>
         </div>
-        <p class="services-lede">From routine exams to specialized treatments, we bring together advanced technology and genuine personal care — the way eye care should be.</p>
-      </header>
-
-      <div class="services-grid">
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><path d="M4 16s6-9 12-9 12 9 12 9-6 9-12 9S4 16 4 16Z" stroke="currentColor" stroke-width="1.4"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.4"/></svg>
-          </span>
-          <h3>Comprehensive Eye Exams</h3>
-          <p>A thorough evaluation of your vision and eye health — an essential part of your overall wellness and preventive care.</p>
-          <a href="services.html">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="11" cy="16" r="5.5" stroke="currentColor" stroke-width="1.4"/><circle cx="21" cy="16" r="5.5" stroke="currentColor" stroke-width="1.4"/><path d="M16.5 16h0" stroke="currentColor" stroke-width="1.4"/></svg>
-          </span>
-          <h3>Eyeglasses</h3>
-          <p>Over 600 frames and expert opticians to help you look great and see clearly. Your style, your prescription, perfected.</p>
-          <a href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><path d="M16 5s-8 10-8 16a8 8 0 1 0 16 0c0-6-8-16-8-16Z" stroke="currentColor" stroke-width="1.4"/></svg>
-          </span>
-          <h3>Dry Eye Evaluations</h3>
-          <p>We evaluate, treat, and manage dry eye conditions to relieve your symptoms and restore lasting comfort.</p>
-          <a href="services.html">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="12" r="4" stroke="currentColor" stroke-width="1.4"/><ellipse cx="16" cy="10.5" rx="3" ry="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M9 27c1.5-6 4.5-9 7-9s5.5 3 7 9" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="20" r="1.2" fill="currentColor"/><circle cx="20" cy="20" r="1.2" fill="currentColor"/></svg>
-          </span>
-          <h3>Pediatric Eye Exams</h3>
-          <p>80% of learning is visual. Early detection of children's vision problems protects their future development and academic success.</p>
-          <a href="services.html">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="7" stroke="currentColor" stroke-width="1.4"/><circle cx="14" cy="14" r="2.2" fill="currentColor"/><path d="M19.2 19.2 27 27" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-          </span>
-          <h3>Myopia Control</h3>
-          <p>Specialized treatment to slow the progression of nearsightedness in children and protect long-term eye health.</p>
-          <a href="services.html">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="9" stroke="currentColor" stroke-width="1.4"/><circle cx="16" cy="16" r="3.5" stroke="currentColor" stroke-width="1.3"/><path d="M16 7v3M16 22v3M7 16h3M22 16h3" stroke="currentColor" stroke-width="1.3"/></svg>
-          </span>
-          <h3>Medical Exams &amp; Imaging</h3>
-          <p>Advanced imaging and management of glaucoma, macular degeneration, diabetic eye disease, and more.</p>
-          <a href="services.html">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><ellipse cx="16" cy="16" rx="11" ry="6.5" stroke="currentColor" stroke-width="1.4"/><ellipse cx="16" cy="16" rx="5" ry="3" stroke="currentColor" stroke-width="1.3"/><circle cx="16" cy="16" r="1.4" fill="currentColor"/></svg>
-          </span>
-          <h3>Scleral &amp; RGP Lenses</h3>
-          <p>Large gas-permeable lenses offering a moisture-rich, comfortable solution for irregular corneas and chronic dry eye.</p>
-          <a href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="13" cy="16" r="7" stroke="currentColor" stroke-width="1.4"/><circle cx="20" cy="16" r="7" stroke="currentColor" stroke-width="1.4"/><circle cx="13" cy="16" r="2" stroke="currentColor" stroke-width="1.2"/><circle cx="20" cy="16" r="2" stroke="currentColor" stroke-width="1.2"/></svg>
-          </span>
-          <h3>Contact Lenses</h3>
-          <p>Safe, effective vision correction with expert fitting and ongoing supervision. Daily, monthly, and specialty options available.</p>
-          <a href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Learn More <span>→</span></a>
-        </article>
-
-        <article class="svc">
-          <span class="svc-icon" aria-hidden="true">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M9 18c2.5-5 5.5-7.5 7-7.5S20.5 13 23 18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="16" cy="16" r="2" fill="currentColor"/></svg>
-          </span>
-          <h3>Orthokeratology</h3>
-          <p>Reshape your cornea overnight with specially designed lenses — wake up seeing clearly, glasses-free throughout the day.</p>
-          <a href="services.html">Learn More <span>→</span></a>
-        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== FEATURED COLLECTION ========== -->
-  <!-- ========== FEATURED — reference layout ========== -->
-  <section class="featured">
-    <div class="featured-copy">
-      <svg class="featured-deco" viewBox="0 0 48 302" fill="none" aria-hidden="true">
-        <line x1="24" y1="0" x2="24" y2="302" stroke="currentColor" stroke-width="1.15"/>
-        <line x1="18" y1="28" x2="30" y2="28" stroke="currentColor" stroke-width="1.15"/>
-        <path d="M12 70 V168 M36 70 V168 M12 70 A12 12 0 0 1 36 70" stroke="currentColor" stroke-width="1.15"/>
-        <line x1="6" y1="108" x2="12" y2="108" stroke="currentColor" stroke-width="1.15"/>
-        <line x1="36" y1="108" x2="42" y2="108" stroke="currentColor" stroke-width="1.15"/>
-        <path d="M12 168 Q24 198 36 168" stroke="currentColor" stroke-width="1.15"/>
-        <path d="M14.5 168 Q24 190 33.5 168" stroke="currentColor" stroke-width="1.1"/>
-        <path d="M17 168 Q24 182 31 168" stroke="currentColor" stroke-width="1.05"/>
-        <line x1="18" y1="204" x2="30" y2="204" stroke="currentColor" stroke-width="1.15"/>
-        <circle cx="24" cy="218" r="3.5" fill="currentColor"/>
-        <line x1="18" y1="230" x2="30" y2="230" stroke="currentColor" stroke-width="1.15"/>
-      </svg>
-      <div class="featured-text">
-        <p class="featured-eyebrow">Featured Collection</p>
-        <h2>
-          <span>Timeless</span>
-          <span>Design. Lasting</span>
-          <span>Clarity.</span>
-        </h2>
-        <p class="featured-lede">Thoughtfully selected frames that combine craftsmanship, comfort and individuality.</p>
-        <a class="featured-btn" href="https://secure.yourlens.com/grookaknis/" target="_blank" rel="noopener noreferrer">Explore Eyewear <span>→</span></a>
-      </div>
-    </div>
-    <div class="featured-media">
-      <img src="assets/featured-eyewear.png" alt="Tortoiseshell eyeglasses from the featured collection" width="900" height="700" loading="lazy">
-    </div>
-  </section>
-
-  <!-- ========== PRECISION (Group_13) — live text + illustration ========== -->
-  <section class="precision" id="precision">
-    <div class="precision-visual">
-      <span class="precision-rule" aria-hidden="true"></span>
-      <figure class="precision-frame">
-        <img src="assets/precision-visual.png" alt="Stylized illustration of an eye exam with diagnostic technology" width="430" height="251" loading="lazy">
-      </figure>
-    </div>
-    <div class="precision-copy">
-      <p class="precision-eyebrow">Featured Technology</p>
-      <h2>
-        <span>Precision</span>
-        <span>Meets Care</span>
-      </h2>
-      <p class="precision-lede">We use the latest diagnostic technology to detect, treat and prevent vision issues — because your sight matters to us.</p>
-      <a class="precision-link" href="services.html">Learn More <span>→</span></a>
-    </div>
-    <ul class="precision-list">
-      <li>
-        <span class="ring" aria-hidden="true"></span>
+    <section class="services inner" id="services" aria-label="Personalized eye care treatments">
+      <div class="services-head">
         <div>
-          <strong>Digital Retinal Imaging</strong>
-          <p>Early detections. Better outcomes.</p>
+          <p class="gold">Our Service/</p>
+          <h2>Personalized eye<br>care treatments</h2>
         </div>
-      </li>
-      <li>
-        <span class="ring" aria-hidden="true"></span>
+        <p>From routine exams to specialized treatments, together we bring advanced technology and genuine personal care — the way your eye care should be. Swipe through what we do most often.</p>
+      </div>
+      <div class="pills" role="list">
+        <a class="is-on" href="#services" role="listitem">Dry Eye Treatment</a>
+        <a href="#services" role="listitem">Eye exams</a>
+        <a href="#services" role="listitem">Ocular Disease Care</a>
+      </div>
+      <div class="cards">
+        <a class="card" href="#services">
+          <img src="assets/img/g3-0.jpg" alt="" width="252" height="319">
+          <span>Comprehensive<br>eye exams</span>
+          <i aria-hidden="true">↗</i>
+        </a>
+        <a class="card" href="#services">
+          <img src="assets/img/g3-1.jpg" alt="" width="252" height="319">
+          <span>Ocular<br>disease care</span>
+          <i aria-hidden="true">↗</i>
+        </a>
+        <a class="card" href="#services">
+          <img src="assets/img/g3-2.jpg" alt="" width="252" height="319">
+          <span>Diabetic &amp;<br>Retinal Health</span>
+          <i aria-hidden="true">↗</i>
+        </a>
+        <a class="card" href="#services">
+          <img src="assets/img/g3-3.jpg" alt="" width="252" height="319">
+          <span>Dry Eye<br>Treatment</span>
+          <i aria-hidden="true">↗</i>
+        </a>
+      </div>
+    </section>
+
+    <section class="focus inner" aria-label="Your eyes. Our focus.">
+      <h2>Your eyes. Our focus.<br>15,000+ patients, 40+ years expirience.</h2>
+      <hr class="focus-line">
+      <div class="focus-cols">
+        <article class="focus-col">
+          <svg class="focus-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <circle cx="16.5" cy="24" r="8.5" stroke="currentColor" stroke-width="1.35"/>
+            <circle cx="31.5" cy="24" r="8.5" stroke="currentColor" stroke-width="1.35"/>
+            <path d="M25 24h-2" stroke="currentColor" stroke-width="1.35"/>
+          </svg>
+          <h3>One Place. One Visit.</h3>
+          <p>Eye exam, frame fitting and lens fabrication, all under one roof with an on-site lab.</p>
+        </article>
+        <article class="focus-col">
+          <svg class="focus-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <path d="M8 24c4.2-7.5 10-11.5 16-11.5S35.8 16.5 40 24c-4.2 7.5-10 11.5-16 11.5S12.2 31.5 8 24Z" stroke="currentColor" stroke-width="1.35"/>
+            <circle cx="24" cy="24" r="4.2" stroke="currentColor" stroke-width="1.35"/>
+          </svg>
+          <h3>Beyond 20/20</h3>
+          <p>Our Biophotonic Scanner measures macular pigment, a key risk marker for macular degeneration.</p>
+        </article>
+        <article class="focus-col">
+          <svg class="focus-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <circle cx="24" cy="24" r="13.5" stroke="currentColor" stroke-width="1.35"/>
+            <circle cx="24" cy="19.5" r="4.2" stroke="currentColor" stroke-width="1.35"/>
+            <path d="M14.5 33.2c2.4-4.2 6-6.2 9.5-6.2s7.1 2 9.5 6.2" stroke="currentColor" stroke-width="1.35"/>
+          </svg>
+          <h3>Tailored for You</h3>
+          <p>Dry eye, specialty contacts and computer vision care matched to your eyes, not a generic checklist.</p>
+        </article>
+        <article class="focus-col">
+          <svg class="focus-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="2.15" fill="currentColor"/>
+            <circle cx="24" cy="16" r="2.15" fill="currentColor"/>
+            <circle cx="32" cy="16" r="2.15" fill="currentColor"/>
+            <circle cx="16" cy="24" r="2.15" fill="currentColor"/>
+            <circle cx="24" cy="24" r="2.15" fill="currentColor"/>
+            <circle cx="32" cy="24" r="2.15" fill="currentColor"/>
+            <circle cx="16" cy="32" r="2.15" fill="currentColor"/>
+            <circle cx="24" cy="32" r="2.15" fill="currentColor"/>
+            <circle cx="32" cy="32" r="2.15" fill="currentColor"/>
+          </svg>
+          <h3>Care That Lasts</h3>
+          <p>Regular exams from doctors with 30+ years of experience, so you see what’s changing and why it matters.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="duo inner" id="doctors" aria-label="Doctors and new patients">
+      <article class="duo-card">
+        <img src="assets/img/g5-0.jpg" alt="">
+        <p class="duo-side">Newburgh, NY — Hudson Valley</p>
+        <div class="duo-copy">
+          <h3>Our Doctors</h3>
+          <p>Because eye care is personal.</p>
+          <a class="btn" href="#doctors">Meet the Team</a>
+        </div>
+      </article>
+      <article class="duo-card" id="new-patients">
+        <img src="assets/img/g5-1.jpg" alt="">
+        <div class="duo-copy">
+          <h3>Your First Visit Starts Here</h3>
+          <p>Accepting new patients. See which<br>insurances we take and other information.</p>
+          <a class="btn" href="#contact">New Patients</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="practice" aria-label="Inside the practice">
+      <div class="practice-inner">
+        <p class="label">Inside the Practice/</p>
+        <h2>Advanced eye care for<br>healthier, clearer vision</h2>
+        <p class="practice-lead">Two licensed opticians, an on-site lab and technology chosen for your eye health as much as your style.</p>
+        <div class="practice-step">
+          <span class="num">01</span>
+          <div>
+            <strong>Biophotonic Scanner</strong>
+            <p>Measures macular pigment density, a key risk marker for age-related macular degeneration.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <span class="num">02</span>
+          <div>
+            <strong>On-Site Glasses Lab</strong>
+            <p>Lenses fabricated in-house, with digital lens technology and anti-reflective coatings.</p>
+          </div>
+        </div>
+        <div class="practice-step">
+          <span class="num">03</span>
+          <div>
+            <strong>Easy, Accessible Visits</strong>
+            <p>First-floor access, free parking and reminders by text, email or phone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scanner inner" id="scanner" aria-label="Biophotonic scanner">
+      <div class="scanner-card">
+        <video class="scanner-card-img" autoplay muted loop playsinline preload="metadata" poster="assets/img/g7-eye.jpg">
+          <source src="assets/video/eye-bg.mp4" type="video/mp4">
+        </video>
+        <div class="scanner-card-grid">
+          <div class="scanner-card-left">
+            <p class="scanner-badge">Biophotonic Scanner</p>
+            <h2>Most people lack of<br>macular pigment—<br>we will measure yours.</h2>
+            <a class="scanner-cta" href="#contact">Book an Eye Exam</a>
+            <div class="mpod-bar">
+              <span class="mpod-pill">MPOD</span>
+              <p>Americans with<br>low macular pigment</p>
+              <strong>78%</strong>
+            </div>
+          </div>
+          <div class="scanner-defs">
+            <div>
+              <h3>Lutein &amp; Zeaxanthin</h3>
+              <p>Natural pigments at the center of your macula, found in a 2:1 ratio, that act as internal sunglasses against blue light.</p>
+            </div>
+            <div>
+              <h3>MPOD Scan</h3>
+              <p>Measures your macular pigment density, a key risk marker for age-related macular degeneration.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scanner-bot">
         <div>
-          <strong>Optical Coherence Tomography</strong>
-          <p>Detailed views. Deeper insights.</p>
+          <p class="gold">Your Scan /</p>
+          <h3>What your scan<br>tells you?</h3>
+          <p class="scan-plan">Scan · Score · Plan</p>
         </div>
-      </li>
-      <li>
-        <span class="ring" aria-hidden="true"></span>
         <div>
-          <strong>Visual Field Testing</strong>
-          <p>Detect more. Protect your vision.</p>
+          <p class="scanner-quote">“The scan is part of your eye exam. Your doctor goes over your result with you and explains what it means for your eyes.”</p>
+          <div class="want-scan">
+            <svg width="40" height="32" viewBox="0 0 40 32" fill="none" aria-hidden="true">
+              <circle cx="14" cy="9.5" r="5.2" stroke="currentColor" stroke-width="1.35"/>
+              <path d="M4.2 28c1.4-6.6 5.2-10 9.8-10s8.4 3.4 9.8 10" stroke="currentColor" stroke-width="1.35"/>
+              <circle cx="26" cy="9.5" r="5.2" stroke="currentColor" stroke-width="1.35"/>
+              <path d="M16.2 28c1.4-6.6 5.2-10 9.8-10s8.4 3.4 9.8 10" stroke="currentColor" stroke-width="1.35"/>
+            </svg>
+            <div>
+              <strong>Want the scan?</strong>
+              <p>Ask for it at your next visit, or when you book your appointment.</p>
+            </div>
+          </div>
         </div>
-      </li>
-    </ul>
-  </section>
+      </div>
+    </section>
 
-  <!-- ========== ABOUT / TRUST (Desktop-3: copy | stats) ========== -->
-  <section class="about" id="about">
-    <div class="about-copy">
-      <p class="about-eyebrow">Hudson Valley Eye &amp; Optical</p>
-      <h2>
-        <span>Experience</span>
-        <span>You Can Trust</span>
-      </h2>
-      <p>Drs. Elaina M. Groo and John Kaknis provide independent, state-of-the-art eye care with a full team of licensed opticians, technicians, and front desk professionals.</p>
-      <a class="link-arrow" href="our-practice.html">Meet the Team <span>→</span></a>
-    </div>
-    <div class="about-stats" aria-label="Practice highlights">
-      <div class="stat">
-        <strong>20+ Years of Experience</strong>
+    <section class="why inner" aria-label="Why neighbours choose Hudson Valley Eye Doctor">
+      <div class="why-head">
+        <h2>Why neighbours choose<br>Hudson Valley Eye Doctor</h2>
+        <p>Eye care that goes beyond the prescription,<br>from visual skills to eye disease.</p>
       </div>
-      <div class="stat">
-        <strong>Thousands of Happy Patients</strong>
+      <div class="why-grid">
+        <article class="why-card why-tall">
+          <img src="assets/img/g8-3.jpg" alt="">
+          <div class="why-card-copy">
+            <h3>Care that looks beyond</h3>
+            <p>from how your eyes work together to how healthy they are.</p>
+            <a class="btn" href="#services">Our services</a>
+          </div>
+        </article>
+        <article class="why-card why-rate">
+          <img src="assets/img/g8-0.jpg" alt="">
+          <div class="why-stat">
+            <p class="why-stat-line"><strong>4.2</strong> <span>Google rate</span></p>
+            <p>by our patients.</p>
+          </div>
+        </article>
+        <article class="why-card why-sat">
+          <div class="why-stat">
+            <strong>98%</strong>
+            <p>Satisfaction rate.</p>
+          </div>
+          <img src="assets/img/g8-2.jpg" alt="">
+        </article>
+        <article class="why-card why-wide">
+          <div class="why-card-copy">
+            <h3>Relieve eye strain and dryness</h3>
+            <p>—so you focus on your day, not your eyes.</p>
+          </div>
+          <div class="why-wide-visual">
+            <img src="assets/img/g8-1.jpg" alt="">
+          </div>
+        </article>
       </div>
-      <div class="stat">
-        <strong>Top Brands in Eyewear &amp; Lenses</strong>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== STORIES (Group_15) ========== -->
-  <section class="stories">
-    <div class="stories-left">
-      <p class="stories-eyebrow">Patient Stories &amp; Reviews</p>
-      <h2>
-        <span>Real Results.</span>
-        <span>What Our</span>
-        <span>Patients Say.</span>
-      </h2>
-    </div>
-    <div class="stories-quote">
-      <blockquote>
-        <span class="q-mark q-open" aria-hidden="true">“</span>
-        <p>They explained everything clearly and helped me find frames that fit my life—not just my prescription.</p>
-        <span class="q-mark q-close" aria-hidden="true">”</span>
-        <footer>
-          <cite>— Amanda K.</cite>
-        </footer>
-      </blockquote>
-    </div>
-    <div class="stories-aside">
-      <img class="stories-eye" src="assets/stories-eye.png" alt="" width="203" height="163" draggable="false" aria-hidden="true">
-      <div class="stories-controls">
-        <button type="button" class="stories-nav-btn" data-dir="-1" aria-label="Previous">←</button>
-        <span class="stories-num">01 / 03</span>
-        <button type="button" class="stories-nav-btn" data-dir="1" aria-label="Next">→</button>
+    <section class="reviews inner" id="reviews" aria-label="What our patients say">
+      <div class="reviews-head">
+        <h2>What our patients say</h2>
+        <p>Hear from neighbours who have trusted Hudson Valley Eye Doctor with their eyes for over 40 years.</p>
       </div>
-    </div>
-  </section>
+      <div class="reviews-grid">
+        <div class="reviews-left">
+          <p class="gold">Your Scan /</p>
+          <h3>Real patients with real<br>experiences of our care</h3>
+          <div class="rating">
+            <strong>4.2</strong>
+            <div>
+              <div class="stars" aria-hidden="true">★★★★★</div>
+              <small>from Google reviews</small>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-right">
+          <div class="review-slides">
+            <article class="review-slide is-active">
+              <blockquote class="quote">“The Staff is awesome. They make you feel like you’re visiting family. Everyone is super friendly, very informative..”</blockquote>
+              <div class="quote-meta">
+                <img class="quote-avatar" src="assets/img/g9-0.jpg" alt="">
+                <div>
+                  <strong>Sheryl Kat Scherer</strong>
+                  <p>The Staff is awesome. They make you feel like you’re visiting family. Everyone is super friendly, very informative.</p>
+                </div>
+              </div>
+            </article>
+            <article class="review-slide">
+              <blockquote class="quote">“They take the time to explain what’s going on with your eyes. I never feel rushed, and the exam is thorough.”</blockquote>
+              <div class="quote-meta">
+                <img class="quote-avatar" src="assets/img/g9-0.jpg" alt="">
+                <div>
+                  <strong>Google review</strong>
+                  <p>They take the time to explain what’s going on with your eyes. I never feel rushed, and the exam is thorough.</p>
+                </div>
+              </div>
+            </article>
+            <article class="review-slide">
+              <blockquote class="quote">“On-site lab meant my glasses were ready quickly. The opticians were patient with the fitting.”</blockquote>
+              <div class="quote-meta">
+                <img class="quote-avatar" src="assets/img/g9-0.jpg" alt="">
+                <div>
+                  <strong>Google review</strong>
+                  <p>On-site lab meant my glasses were ready quickly. The opticians were patient with the fitting.</p>
+                </div>
+              </div>
+            </article>
+            <article class="review-slide">
+              <blockquote class="quote">“I’ve been coming here for years. Clear answers, kind staff, and they actually look after your eye health.”</blockquote>
+              <div class="quote-meta">
+                <img class="quote-avatar" src="assets/img/g9-0.jpg" alt="">
+                <div>
+                  <strong>Google review</strong>
+                  <p>I’ve been coming here for years. Clear answers, kind staff, and they actually look after your eye health.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="reviews-nav">
+            <span class="reviews-count">01 / 04</span>
+            <div class="arrows">
+              <button type="button" class="reviews-prev" aria-label="Previous review">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M8.6 2.4 4.2 7l4.4 4.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <button type="button" class="reviews-next" aria-label="Next review">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="m5.4 2.4 4.4 4.6-4.4 4.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ========== CTA ========== -->
-  <section class="cta">
-    <div class="cta-photo">
-      <img src="assets/cta-building.png" alt="Hudson Valley Eye Doctor office exterior" width="420" height="280" loading="lazy">
-    </div>
-    <div class="cta-main">
-      <h2>
-        <span>Book Your Eye</span>
-        <span>Exam Today</span>
-      </h2>
-      <a class="btn-fill" href="contact.html">Book an Exam <span>→</span></a>
-    </div>
-    <div class="cta-meta">
-      <div class="meta">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="9" r="2.2" stroke="currentColor" stroke-width="1.4"/></svg>
-        <p>1 Scobie Drive<br>Newburgh, NY 12550</p>
+    <section class="faq inner" id="faq" aria-label="Questions and answers">
+      <div class="faq-grid">
+        <div class="faq-left">
+          <p class="gold">FAQ /</p>
+          <h3>Questions &amp; answers</h3>
+          <p>Still unsure about something? Call our front desk on <a href="tel:8455652020">(845) 565-2020</a> and we’ll talk it through.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <button type="button" aria-expanded="true">
+              <span>Do you accept my insurance?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel">
+              <p>We accept most major medical insurances, including Medicare, Blue Cross and Blue Shield, Aetna and Cigna, and vision plans like VSP, EyeMed and Davis. Not sure about your coverage? Ask our staff.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>What happens at my first appointment?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel">
+              <p>Bring your ID, insurance cards and a list of medications. We’ll take a full history, check your vision and eye health, and talk through glasses or contacts if you need them. A comprehensive exam usually takes about an hour.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>Can I be seen for an eye emergency?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel">
+              <p>Yes. Call the office and we’ll do our best to see you the same day. After hours, Dr. Groo can be reached at (845) 500-8473.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>How often should I have my eyes checked?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel">
+              <p>Most adults should have a comprehensive eye exam every year. Come sooner if you notice changes in vision, have diabetes or another condition that affects the eyes, or if your doctor recommends it.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>Can I repair or adjust my glasses with you?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-panel">
+              <p>Yes. Our licensed opticians can adjust, tighten and repair many frames in the office. Bring them in during regular hours — you don’t need an exam appointment for a simple adjustment.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="meta">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 4h3l2 5-2.2 1.4a13 13 0 0 0 6.8 6.8L17 15l5 2v3a2 2 0 0 1-2 2A17 17 0 0 1 4 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.4"/></svg>
-        <p><a href="tel:8455652020">(845) 565-2020</a></p>
-      </div>
-      <div class="meta">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.4"/><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.4"/></svg>
-        <p>Mon–Wed 9–5<br>Thu 11–8</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== FOOTER ========== -->
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <strong>Hudson Valley Eye Doctor</strong>
-        <p>Drs. Groo &amp; Kaknis Optometry</p>
+    <section class="cta" id="contact" aria-label="Book your first visit">
+      <div class="cta-inner">
+        <h2>Book your first visit today!<br>Clear Answers &amp; Healthy Eyes.<br>Your Journey Starts Here.</h2>
+        <a class="btn btn-cream" href="mailto:hveyedoc@gmail.com">Book an Exam</a>
       </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <a href="services.html">Eye Care</a>
-        <a href="optical.html">Eyewear</a>
-        <a href="our-practice.html">About</a>
-        <a href="patient-forms.html">Resources</a>
-      </nav>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/hudsonvalleyeyedoctor/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
-        <a href="https://www.facebook.com/HudsonValleyEyeDoc" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Pinterest">PI</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 Hudson Valley Eye Doctor · Newburgh, NY</p>
-      <p><a href="privacy-notice.html">Privacy Policy</a> · <a href="contact.html">Terms</a></p>
-    </div>
-  </footer>
+    </section>
 
+    <footer class="footer" id="footer">
+      <div class="inner footer-top">
+        <div>
+          <p class="footer-brand">Hudson Valley Eye Doc</p>
+          <p class="footer-tag">Optics</p>
+          <p class="footer-note">One short email, a few times a year with our most popular news and seasonal offers.</p>
+          <form class="footer-newsletter" action="#" method="post" onsubmit="return false">
+            <input type="email" name="email" placeholder="Your email address" aria-label="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Services</h4>
+            <a href="#services">Eye exams</a>
+            <a href="#services">Biophotonic scan</a>
+            <a href="#services">Dry eye care</a>
+            <a href="#services">Contact lenses</a>
+          </div>
+          <div>
+            <h4>Practice</h4>
+            <a href="#doctors">About</a>
+            <a href="#doctors">Our doctors</a>
+            <a href="#contact">New patients</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div>
+            <h4>Visit</h4>
+            <p>1 Gidney Place,<br>Newburgh, NY 12550</p>
+            <p>Open Mon-Wed 9-5 / Thu until 7:00 PM</p>
+            <a class="intro-link" href="https://maps.google.com/?q=1+Gidney+Place+Newburgh+NY" target="_blank" rel="noopener noreferrer">Get directions</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>(845) 561-0305</p>
+            <p>hello@hudsonvalleyeyedoc.com</p>
+            <a class="intro-link" href="#contact">Book an exam</a>
+          </div>
+        </div>
+      </div>
+      <div class="inner footer-bottom">
+        <span>© 2024 Hudson Valley Eye Doctor</span>
+        <span>Privacy · Terms · Accessibility</span>
+      </div>
+    </footer>
+    </div>
+
+  </main>
   <script src="js/main.js"></script>
 </body>
 </html>
