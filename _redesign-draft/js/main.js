@@ -43,3 +43,22 @@ if (menuBtn && navPrimary) {
     menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
   });
 }
+
+const g26Burger = document.querySelector(".g26-burger");
+const g26Links = document.querySelector(".g26-links");
+if (g26Burger && g26Links) {
+  g26Burger.addEventListener("click", () => {
+    const open = g26Links.classList.toggle("is-open");
+    g26Burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+}
+
+const g26Cards = document.querySelector(".g26-cards");
+document.querySelectorAll(".g26-arrows button").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (!g26Cards) return;
+    const card = g26Cards.querySelector(".g26-card");
+    const step = card ? card.getBoundingClientRect().width + 12 : 260;
+    g26Cards.scrollBy({ left: step * Number(btn.dataset.dir), behavior: "smooth" });
+  });
+});
