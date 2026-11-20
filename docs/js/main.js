@@ -37,6 +37,33 @@ menu?.querySelectorAll("a").forEach((link) => {
   });
 });
 
+const hero = document.querySelector(".hero");
+const filmSticky = document.querySelector(".film-sticky");
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let heroTick = false;
+
+function updateHeroSlide() {
+  heroTick = false;
+  if (reduceMotion) return;
+  const vh = window.innerHeight || 1;
+  const y = window.scrollY;
+  const heroP = Math.min(1, Math.max(0, y / vh));
+  const filmP = Math.min(1, Math.max(0, y / (vh * 2)));
+  hero?.style.setProperty("--hero-shift", `${heroP * 10}vh`);
+  filmSticky?.style.setProperty("--film-shift", `${filmP * 8}vh`);
+}
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (heroTick) return;
+    heroTick = true;
+    requestAnimationFrame(updateHeroSlide);
+  },
+  { passive: true }
+);
+updateHeroSlide();
+
 const slides = [...document.querySelectorAll(".review-slide")];
 const countEl = document.querySelector(".reviews-count");
 const prevBtn = document.querySelector(".reviews-prev");
@@ -52,6 +79,43 @@ function showReview(index) {
     const total = String(slides.length).padStart(2, "0");
     countEl.textContent = `${n} / ${total}`;
   }
+}
+
+if (!reduceMotion) {
+  const revealGroups = [
+    [".intro-lead", ".intro-kicker", ".intro-copy p", ".intro-link"],
+    [".services-head > *", ".pills", ".card"],
+    [".focus h2", ".focus-col"],
+    [".duo-card"],
+    [".practice-inner > .label", ".practice-inner > h2", ".practice-lead", ".practice-step"],
+    [".scanner-card-left > *", ".scanner-defs > *", ".scanner-bot > *"],
+    [".why-head", ".why-card"],
+    [".reviews-head", ".reviews-left", ".reviews-right"],
+    [".faq-left", ".faq-item"],
+    [".cta-inner > *"],
+    [".footer-top > *", ".footer-cols > *", ".footer-bottom > *"],
+  ];
+
+  revealGroups.forEach((group) => {
+    const els = group.flatMap((sel) => [...document.querySelectorAll(sel)]);
+    els.forEach((el, i) => {
+      el.classList.add("reveal");
+      el.style.setProperty("--d", `${Math.min(i, 5) * 80}ms`);
+    });
+  });
+
+  const revealObs = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        revealObs.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.16, rootMargin: "0px 0px -8% 0px" }
+  );
+
+  document.querySelectorAll(".reveal").forEach((el) => revealObs.observe(el));
 }
 
 prevBtn?.addEventListener("click", () => showReview(reviewIndex - 1));
